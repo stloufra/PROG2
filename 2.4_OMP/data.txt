@@ -1,0 +1,25 @@
+pi = 3.14159
+
+real	0m0.209s
+user	0m3.204s
+sys	0m0.012s
+pi = 3.14159
+
+real	0m0.170s
+user	0m2.541s
+sys	0m0.020s
+pi = 3.14159
+
+real	0m0.167s
+user	0m2.588s
+sys	0m0.000s
+pi = 3.14159
+
+real	0m0.162s
+user	0m2.511s
+sys	0m0.000s
+pi = 3.14159
+
+real	0m0.159s
+user	0m2.456s
+sys	0m0.000s
