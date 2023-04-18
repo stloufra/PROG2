@@ -7,7 +7,7 @@
 
 using hrc = std::chrono::high_resolution_clock;
 
-const int N = 1000;
+const int N = 5000;
 const int iter = 1000;
 double h = 1/double(N);
 double h2 = h*h;
@@ -83,7 +83,7 @@ void solver_Jacobi(Field<double> &Un,Field<double> &Un_1,Field<double> &F)
 
 void solver_Jacobi_parallel(Field<double> &Un,Field<double> &Un_1,Field<double> &F)
 {   
-    #pragma omp parallel for collapse(2) 
+    #pragma omp parallel for //collapse(2) 
     for(int j =1; j<N-1; j++)
     {
         for(int i =1; i<N-1; i++)
@@ -93,7 +93,7 @@ void solver_Jacobi_parallel(Field<double> &Un,Field<double> &Un_1,Field<double> 
         }
     }
 
-    #pragma omp parallel for collapse(2) 
+    #pragma omp parallel for //collapse(2) 
     for(int j =1; j<N-1; j++)
     {
         for(int i =1; i<N-1; i++)
